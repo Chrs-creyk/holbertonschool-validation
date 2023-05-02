@@ -14,12 +14,16 @@ After this project, you should be able to:
 - GoHugo
 - goLang
 
-## Lifecycle
+Tooling
 
-- build
-- clean
-- post
-- help
+This project needs the following tools / services:
+
+- An HTML5-compliant web browser (Firefox, Chrome, Opera, Safari, Edge, etc.)
+- A free account on [GitHub](https://github.com/), referenced as `GitHub Handle`
+- A shell terminal with bash, zsh or ksh, including the standard Unix toolset (ls, cd, etc.)
+- [GNU](https://www.gnu.org/software/make/) Make in version 3.81+
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) (command line) in version 2+
+- [Go Hugo](https://gohugo.io/) v0.80+
 
 ### Concepts
 
@@ -44,6 +48,23 @@ You should have a basic knowledge of the following concepts:
     -   Default target and PHONY target
     -   Makefile’s variables and macro syntax
 
+<h1 align="center"> How to use the make file:
+
+## Lifecycle
+
+To execute the make file use the following syntax `make <command>`
+
+`build`:
+- Builds a new version of the website to folder `/dist/` 
+
+`clean`:
+- Removes the contents the folder  `/dist/`
+
+`post`:
+- Creates a new post in the contents/post folder with POST_TITLE and POST_NAME set from the ENV variables.
+
+`help`:
+- Prints out information of the commands to the terminal.
 
 
 ## Story
