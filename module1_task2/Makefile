@@ -1,16 +1,15 @@
 # Define variables
 Publish=hugo
 
-build:
+build: ## to generate
 	$(Publish)
 
-clean:
+clean: ## create a new blog
 	rm -r dist/*
 
-post:
+post:  ## to cleanup dist folder
 	$(Publish) new posts/$(POST_NAME).md
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
-# Overwrite the content of a text file without generating a new one (option -i)
 
 help: ## Show this help usage
 	@echo "Usage: make <command>"
