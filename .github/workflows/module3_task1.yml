@@ -3,7 +3,7 @@ name: module3_task1
 on:
   push:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   module3_task1:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Install markdown-link-check
         run: |
-          ./node_modules/.bin/markdown-link-check
+          ./node_modules/markdown-link-check/markdown-link-check
 
       - name: Build project
         run: |
