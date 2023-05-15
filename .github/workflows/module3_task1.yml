@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3566666666666666666666666666544444444444444
 
       - name: Set up Go
         uses: actions/setup-go@v2
