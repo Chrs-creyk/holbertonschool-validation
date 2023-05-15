@@ -25,7 +25,7 @@ jobs:
 
       - name: Install markdown-link-check
         run: |
-          ./node_modules/.bin/markdown-link-check content/posts
+          ./node_modules/.bin/markdown-link-check
 
       - name: Build project
         run: |
