@@ -1,4 +1,4 @@
-module github.com/Chrs-creyk/awesome-api
+module github.com/chrs-creyk/awesome-api
 
 go 1.18
 
