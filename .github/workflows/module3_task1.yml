@@ -12,4 +12,4 @@ jobs:
       - run: cd module3_task1 && ./setup.sh
       - run: cd module3_task1 && make build
       - run: cd module3_task1 && make test
-      - run: cd module3_task1 &&
+      - run: cd module3_task1 && make help
