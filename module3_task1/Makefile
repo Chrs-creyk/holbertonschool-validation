@@ -39,7 +39,7 @@ check: ## Markdown linting on syntax and dead links
 	@markdownlint ./content/posts/*
 
 validate: ## should validate the file ./dist/index.html by using the command line Holberton’s W3C Validator
-	-@./w3c_validator.py ./dist/index.html
+	@-./w3c_validator.py ./dist/index.html
 
 help: ## Shows this help message
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
