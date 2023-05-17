@@ -27,7 +27,7 @@ Return:
 Exit status is the # of errors, 0 on Success
 """
 import sys
-import urllib3
+import requests
 import os
 
 
@@ -57,7 +57,7 @@ def __validate(file_path, type):
     # https://requests.readthedocs.io/en/master/user/advanced/
     d = open(file_path, "rb").read()
     u = "https://validator.w3.org/nu/?out=json"
-    r = urllib3.PoolManager().request('POST', u, headers=h, body=d)
+    r = requests.post(u, headers=h, data=d)
 
     if not r.status_code < 400:
         raise ConnectionError("Unable to connect to API endpoint.")
