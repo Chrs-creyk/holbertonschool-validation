@@ -6,4 +6,4 @@ sudo dpkg -i hugo_binary.deb
 sudo rm hugo_binary.deb
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sudo sh -s -- -b /usr/local/bin
 sudo npm install -g markdown-link-check
-sudo npm install -g markdownlint-cli
+
