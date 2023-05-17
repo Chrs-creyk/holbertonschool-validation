@@ -1,15 +1,29 @@
 name: module3_task1
+
 on:
   push:
   schedule:
     - cron: "0 0 * * *"
+
 jobs:
   module3_task1:
     runs-on: ubuntu-22.04
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: cd module3_task1 && ./setup.sh
-      - run: cd module3_task1 && make build
-      - run: cd module3_task1 && make test
-      - run: cd module3_task1 && make help
+
+      - name: Setup
+        run: |
+          cd module3_task1
+          sudo ./setup.sh
+
+      - name: Build
+        run: cd module3_task1 && sudo make build
+
+      - name: Test
+        run: cd module3_task1 && sudo make test
+
+      - name: Help
+        run: cd module3_task1 && sudo make help
+  
