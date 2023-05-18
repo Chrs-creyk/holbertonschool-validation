@@ -26,7 +26,7 @@ test: ## Check expected behaviour of the app
 	@make validate
 
 lint: ## Static linting on go files using golangci-lint
-	@markdownlint README.md DEPLOY.md
+	@-golangci-lint run
 
 unit-tests: ## execute (successfully) the Golang unit tests
 	@go test -v -short -coverprofile=coverage-units.out     
@@ -40,10 +40,6 @@ check: ## Markdown linting on syntax and dead links
 
 validate: ## should validate the file ./dist/index.html by using the command line Holberton’s W3C Validator
 	@-./w3c_validator.py ./dist/index.html
-
-package: ## Creates a zip file that contains lis needed files to deply the website
-	@make build
-	@zip awesome-website.zip awesome-api ./dist/
 
 help: ## Shows this help message
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
