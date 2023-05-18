@@ -3,7 +3,7 @@
 ## What is in the archive and how to unarchive it?
 
 The archive contains the files needed to deploy the awesome website.
-To unarchive it, run the following command: `unzip awesome-website.zip`
+To unarchive it, run the following command: `unzip awesome-website.zip` It is created when a tag is added to Github repository.
 
 ## What are the commands to start and stop the application?
 
