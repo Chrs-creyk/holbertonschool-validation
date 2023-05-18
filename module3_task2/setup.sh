@@ -1,9 +1,5 @@
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y wget make dpkg curl
-sudo wget -O hugo_binary.deb https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_extended_0.111.3_linux-amd64.deb
-sudo dpkg -i hugo_binary.deb
-sudo rm hugo_binary.deb
-curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sudo sh -s -- -b /usr/local/bin
-sudo npm install -g markdown-link-check
-sudo npm install -g markdownlint-cli
+apt-get update && apt-get install -y hugo make
+apt-get install curl -y
+curl -Lo install_hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.109.0/hugo_extended_0.109.0_linux-amd64.deb
+apt-get install ./install_hugo.deb
