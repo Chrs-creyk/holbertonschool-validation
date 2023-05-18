@@ -3,7 +3,8 @@
 ## What is in the archive and how to unarchive it?
 
 The archive contains the files needed to deploy the awesome website.
-To unarchive it, run the following command: `unzip awesome-website.zip` It is created when a tag is added to Github repository.
+To unarchive it, run the following command: `unzip awesome-website.zip`
+It is created when a tag is added to Github repository.
 
 ## What are the commands to start and stop the application?
 
@@ -11,8 +12,8 @@ To start the application, use the command `make run`.
 
 ## How to customize where the application logs are written?
 
-You can customize the location of the application logs by changing the
-name "awesome-api.log" in the Makefile.
+You can customize the location of the application logs by changing
+the name "awesome-api.log" in the Makefile.
 
 ## How to "quickly" verify that the application is running (healthcheck)?
 
