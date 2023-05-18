@@ -26,7 +26,7 @@ test: ## Check expected behaviour of the app
 	@make validate
 
 lint: ## Static linting on go files using golangci-lint
-	@-golangci-lint run
+	@markdownlint README.md DEPLOY.md
 
 unit-tests: ## execute (successfully) the Golang unit tests
 	@go test -v -short -coverprofile=coverage-units.out     
