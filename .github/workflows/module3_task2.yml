@@ -4,7 +4,7 @@
     push:
       branches: [main, master]
     schedule:
-      - cron: "0 0 * * *"
+      - cron: "* * * * *"
   
   jobs:
     module3_task0:
