@@ -1,9 +1,9 @@
+---
 name: module3_task3
 on:
   push:
   schedule:
-    - cron: "* * * * *"
-
+    - cron: "0 0 * * *"
 jobs:
   build-artifact:
     runs-on: ubuntu-22.04
