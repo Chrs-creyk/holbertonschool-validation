@@ -41,7 +41,7 @@ check: ## Markdown linting on syntax and dead links
 validate: ## should validate the file ./dist/index.html by using the command line Holberton’s W3C Validator
 	@-./w3c_validator.py ./dist/index.html
 
-package: ## Creates a zip file that contains all the needed files to deploy the website
+package: ## Creates a zip file that contains lis needed files to deply the website
 	@make build
 	@zip awesome-website.zip awesome-api ./dist/
 
